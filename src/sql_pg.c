@@ -242,7 +242,7 @@ sql_open (const char *database)
 {
   gchar *conn_info;
 
-conn_info = g_strdup_printf ("dbname='%s' application_name='%s' host='192.168.130.21' port='5432'",
+conn_info = g_strdup_printf ("dbname='%s' host='192.168.130.21' port='5432'",
                                database
                                 ? database
                                 : sql_default_database ());
